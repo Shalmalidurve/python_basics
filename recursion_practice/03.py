@@ -1,0 +1,26 @@
+'''
+f(3)
+│
+├── print(3)
+│
+├── f(2)
+│    │
+│    ├── print(2)
+│    │
+│    └── f(1)
+│         │
+│         ├── print(1)
+│         │
+│         └── f(0)
+│
+└── print(3)
+'''
+
+def fun(n):
+    if n==0:
+        return
+    print(n)
+    fun(n-1)
+    print(n)
+
+fun(3)
